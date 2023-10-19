@@ -1,0 +1,14 @@
+.btn-secondary{
+    background-color: #03032e !important;
+    text-decoration: #f6fcff !important;
+    border: 3px solid #f6fcff ;
+    text-shadow: #f6fcff 0 0 60px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: large !important;
+}
+
+h3{
+    color: #f6fcff !important;
+    font-family: Arial, Helvetica, sans-serif  !important;
+    font-size: 24px;
+}

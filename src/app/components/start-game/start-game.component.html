@@ -1,0 +1,4 @@
+<div class="container" *ngIf="!isStarted">
+    <h3>{{message}}</h3>
+    <a routerLink="/questions" class="btn btn-secondary m-2" (click)="start()">Новая игра</a>
+</div>

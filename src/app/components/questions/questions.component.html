@@ -1,0 +1,32 @@
+<div class="container text-center" *ngIf="isStarted">
+    <div *ngIf="!toContinue">
+        <div>
+            <p class="mess">{{question}}</p>
+        </div>
+        <div class="row g-2">
+            <div class="col-6">
+                <a class="btn btn-secondary w-100 start-border" id="1"  (click)="answer(1)"> {{answer1}}</a>
+            </div>
+            <div class="col-6">
+                <a class="btn btn-secondary w-100 start-border" id="2" (click)="answer(2)"> {{answer2}}</a>
+            </div>
+            <div class="col-6">
+                <a class="btn btn-secondary w-100 mb-2 start-border" id="3" (click)="answer(3)"> {{answer3}}</a>
+            </div>
+            <div class="col-6">
+                <a class="btn btn-secondary w-100 mb-2 start-border" id="4" (click)="answer(4)"> {{answer4}}</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="container text-center mess" *ngIf="toContinue"> {{message}}
+        <div class="row">
+            <div class="col">
+                <a class="btn btn-secondary w-50 m-2 start-border" (click)="continueGame()"> Да</a>
+            </div>
+            <div class="col">
+                <a class="btn btn-secondary w-50 m-2 start-border" (click)="reject()"> Нет</a>
+            </div>
+        </div>
+    </div>
+</div>
